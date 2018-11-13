@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import requests
 
 #会话对象
