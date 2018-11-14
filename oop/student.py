@@ -2,6 +2,8 @@
 
 class Student(object):
 
+    sex = '男'#这是类属性,类的所有实例都可以访问到
+
 
     # def __init__(self,name,score):
     #     self.name = name
