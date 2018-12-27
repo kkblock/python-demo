@@ -10,7 +10,8 @@ fake = Factory.create(locale='zh_CN')
 conn = MongoClient('127.0.0.1', 27017)
 db = conn.jsondata
 data = db.data
-while True:
+i = 0
+while i<1000000:
     num = random.randint(1, 10)
     male = 'M' if num % 2 == 0 else 'F'
     d = {
@@ -25,3 +26,4 @@ while True:
         'phone': fake.phone_number()
     }
     data.insert([d])
+    i = i+1
